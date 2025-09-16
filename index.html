@@ -5,6 +5,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <title>Portfolio — Khairul Akmal</title>
       <meta name="description" content="A simple portfolio built with only HTML5 tags" />
+      <link rel="stylesheet" href="./src/style.css" />
    </head>
    <body>
       <header class="header">
@@ -22,12 +23,8 @@
          </nav>
       </header>
 
-      <section aria-labelledby="illustration-title">
-         <h2 id="illustration-title">Avatar</h2>
-         <figure>
-            <img src="foto.jpg" alt="Photo of Your Name" width="250" height="300" />
-            <figcaption>A personal photo.</figcaption>
-         </figure>
+      <section aria-labelledby="illustration-title" id="illustration">
+         <img src="./src/assets/foto.jpg" alt="Photo of Your Name" />
       </section>
 
       <main>
@@ -46,9 +43,6 @@
          <section id="awards" aria-labelledby="awards-title">
             <h2 id="awards-title">Certificate</h2>
             <table>
-               <caption>
-                  Summary of Certificate
-               </caption>
                <thead>
                   <tr>
                      <th scope="col">Year</th>
@@ -103,57 +97,60 @@
             </article>
          </section>
 
-         <!-- Self Reflection -->
-         <section id="reflection" aria-labelledby="reflection-title">
-            <h2 id="reflection-title">Self Reflection</h2>
-            <article>
-               <p>
-                  I value clarity and expertise. Over the past few years, I have come to understand that small steps will make a big difference in the future. My biggest area of growth is communication—learning to listen first, then proposing
-                  solutions.
-               </p>
-               <details>
-                  <summary>Strengths I’m leaning on</summary>
-                  <ul>
-                     <li>Problem framing before coding</li>
-                     <li>Accessible, semantic HTML</li>
-                     <li>Test‑driven mindset for critical flows</li>
-                  </ul>
-               </details>
-               <details>
-                  <summary>Areas I’m improving</summary>
-                  <ul>
-                     <li>Deeper algorithmic thinking for performance</li>
-                     <li>Timeboxing experiments</li>
-                  </ul>
-               </details>
-            </article>
-         </section>
+         <main aria-labelledby="my-reflection-goals" id="my-reflection-goals">
+            <!-- Self Reflection -->
+            <section id="reflection" aria-labelledby="reflection-title">
+               <h2 id="reflection-title">Self Reflection</h2>
+               <article>
+                  <p>
+                     I value clarity and expertise. Over the past few years, I have come to understand that small steps will make a big difference in the future. My biggest area of growth is communication—learning to listen first, then proposing
+                     solutions.
+                  </p>
+                  <details>
+                     <summary>Strengths I’m leaning on</summary>
+                     <ul>
+                        <li>Problem framing before coding</li>
+                        <li>Accessible, semantic HTML</li>
+                        <li>Test‑driven mindset for critical flows</li>
+                     </ul>
+                  </details>
+                  <details>
+                     <summary>Areas I’m improving</summary>
+                     <ul>
+                        <li>Deeper algorithmic thinking for performance</li>
+                        <li>Timeboxing experiments</li>
+                     </ul>
+                  </details>
+               </article>
+            </section>
 
-         <!-- Future Career Goals -->
-         <section id="goals" aria-labelledby="goals-title">
-            <h2 id="goals-title">Future Career Goals</h2>
-            <article>
-               <p>In the next few years, I plan to develop into a versatile developer who is capable of designing and building any application for the advancement of technology.</p>
-               <ol>
-                  <li>Join an engineering team focused on impactful education or finance tools.</li>
-                  <li>Ship and maintain at least one open‑source library with real users.</li>
-               </ol>
-            </article>
-            <aside>
-               <p><strong>Now</strong>: building small projects and documenting learnings.</p>
-            </aside>
-         </section>
+            <!-- Future Career Goals -->
+            <section id="goals" aria-labelledby="goals-title">
+               <h2 id="goals-title">Future Career Goals</h2>
+               <article>
+                  <p>In the next few years, I plan to develop into a versatile developer who is capable of designing and building any application for the advancement of technology.</p>
+                  <ol>
+                     <li>Join an engineering team focused on impactful education or finance tools.</li>
+                     <li>Ship and maintain at least one open‑source library with real users.</li>
+                  </ol>
+               </article>
+               <aside>
+                  <p><strong>Now</strong>: building small projects and documenting learnings.</p>
+               </aside>
+            </section>
+         </main>
       </main>
 
       <footer id="contact">
          <h2>Contact</h2>
-         <address>
+         <div>
             <p>Email: <a href="mailto:akmalrma1710@gmail.com">akmalrma1710@gmail.com</a></p>
             <p>GitHub: <a href="https://github.com/khmalz">khmalz</a></p>
-            <p>
-               <small>© <time datetime="2025">2025</time> Khairul Akmal. All rights reserved.</small>
-            </p>
-         </address>
+         </div>
       </footer>
+
+      <section id="copyright">
+         <p>© <time datetime="2025">2025</time> Khairul Akmal. All rights reserved.</p>
+      </section>
    </body>
 </html>

@@ -1,0 +1,367 @@
+html,
+body {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.header {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-color: #333;
+   color: white;
+   padding: 1rem;
+}
+
+.header h1 {
+   margin: 0;
+   padding: 0;
+   font-size: 2rem;
+}
+
+.navbar ul {
+   display: flex;
+   list-style: none;
+   padding: 0;
+   margin: 0;
+   background-color: #333;
+   justify-content: space-between;
+}
+
+.navbar a {
+   color: white;
+   text-decoration: none;
+   padding: 1rem;
+}
+
+.navbar a:hover {
+   background-color: #777;
+}
+
+#illustration {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 1rem;
+   row-gap: 1rem;
+}
+
+#illustration img {
+   width: 250px;
+   height: 250px;
+   object-fit: cover;
+   object-position: center;
+   border-radius: 50%;
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   -ms-border-radius: 50%;
+   -o-border-radius: 50%;
+}
+
+#bio {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 1rem;
+   row-gap: 1rem;
+}
+
+#bio h2 {
+   margin: 0;
+   padding: 0;
+   font-size: 1.5rem;
+}
+
+#bio article p {
+   margin: 0;
+   padding: 0;
+   text-align: center;
+}
+
+#awards {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 1rem;
+   row-gap: 1rem;
+}
+
+#awards h2 {
+   margin: 0;
+   padding: 0;
+   font-size: 1.5rem;
+}
+
+#awards table {
+   border-collapse: collapse;
+   width: 100%;
+}
+
+#awards th,
+#awards td {
+   border: 1px solid #ddd;
+   padding: 8px;
+   text-align: left;
+}
+
+#awards th {
+   background-color: #333;
+   color: white;
+}
+
+#awards tr:nth-child(even) {
+   background-color: #f2f2f2;
+}
+
+#awards tr:hover {
+   background-color: #ddd;
+}
+
+#education {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 1rem;
+   row-gap: 1rem;
+}
+
+#education h2 {
+   margin: 0;
+   padding: 0;
+   font-size: 1.5rem;
+}
+
+#education article {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 1rem;
+   row-gap: 1rem;
+}
+
+#education article header {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 0;
+   margin: 0;
+   row-gap: 0.5rem;
+}
+
+#education article header h3 {
+   margin: 0;
+   padding: 0;
+   font-size: 1.2rem;
+}
+
+#education article header p {
+   margin: 0;
+   padding: 0;
+   font-size: 0.8rem;
+}
+
+#education article p {
+   margin: 0;
+   padding: 0;
+   text-align: center;
+}
+
+#education article ul {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
+
+#my-reflection-goals {
+   display: flex;
+   flex-direction: row;
+   gap: 2rem;
+   padding: 1rem;
+   align-items: stretch;
+   margin-bottom: 1rem;
+}
+
+#my-reflection-goals section {
+   flex: 1;
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+   border: 1px solid #ccc;
+   border-radius: 8px;
+   padding: 1rem;
+   height: auto;
+}
+
+/* Heading */
+#my-reflection-goals h2 {
+   margin: 0;
+   font-size: 1.5rem;
+}
+
+/* Konten article */
+#my-reflection-goals article {
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+}
+
+/* Text */
+#my-reflection-goals p {
+   margin: 0;
+   line-height: 1.5;
+   text-align: left;
+}
+
+/* Details */
+#my-reflection-goals details {
+   display: flex;
+   flex-direction: column;
+   gap: 0.25rem;
+}
+
+#my-reflection-goals summary {
+   font-size: 1.1rem;
+   cursor: pointer;
+}
+
+#my-reflection-goals ul,
+#my-reflection-goals ol {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   text-align: left;
+}
+
+#reflection {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 1rem;
+   row-gap: 1rem;
+}
+
+#reflection h2 {
+   margin: 0;
+   padding: 0;
+   font-size: 1.5rem;
+}
+
+#reflection article {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 1rem;
+   row-gap: 1rem;
+}
+
+#reflection article p {
+   margin: 0;
+   padding: 0;
+   text-align: center;
+}
+
+#reflection article details {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   row-gap: 0.1rem;
+}
+
+#reflection article details summary {
+   margin: 0;
+   padding: 0;
+   font-size: 1.2rem;
+}
+
+#reflection article details ul {
+   margin: 0;
+   padding: 0;
+   text-align: center;
+   list-style: none;
+}
+
+#goals {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+#goals #goals-title {
+   margin: 0;
+   padding: 0;
+   font-size: 1.5rem;
+}
+
+#goals article {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 1rem;
+   row-gap: 1rem;
+}
+
+#goals article p {
+   margin: 0;
+   padding: 0;
+   text-align: center;
+}
+
+#goals article ol {
+   margin: 0;
+   padding: 0;
+   text-align: center;
+   list-style: none;
+}
+
+#goals aside p {
+   text-align: center;
+}
+
+#contact {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-color: #333;
+   color: white;
+   padding: 1rem;
+}
+
+#contact h2 {
+   margin: 0;
+   padding: 0;
+   font-size: 1.5rem;
+   margin-bottom: 20px;
+}
+
+#contact div {
+   display: flex;
+   align-items: center;
+   padding: 0;
+   margin: 0;
+   column-gap: 10px;
+}
+
+#contact div p {
+   margin: 0;
+}
+
+#contact div p a {
+   color: white;
+   text-decoration: none;
+}
+
+#contact div p:hover a {
+   text-decoration: underline;
+}
+
+#copyright {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 0;
+   padding: 0.5rem 0;
+   font-size: 0.8rem;
+   background-color: #222;
+   color: white;
+}
